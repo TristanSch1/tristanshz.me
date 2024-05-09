@@ -21,6 +21,9 @@ const config: Config = {
         "primary-light": "hsl(var(--primary-light))",
         "primary-light-foreground": "hsl(var(--primary-light-foreground))",
         "primary-lighter": "hsl(var(--primary-lighter))",
+
+        muted: "hsl(var(--muted))",
+        "muted-foreground": "hsl(var(--muted-foreground))",
       },
       fontFamily: {
         mono: ["var(--font-ibm-plex-mono)"],

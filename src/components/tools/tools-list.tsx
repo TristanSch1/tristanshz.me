@@ -1,12 +1,15 @@
 "use client";
 
-import { getTags, TOOLS } from "@/data/tools";
+import { getTags, getTools, TOOLS } from "@/data/tools";
 import { Tag } from "../elements/tag";
 import { ToolCard } from "./tool-card";
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
+import { useLocale } from "next-intl";
+import { Locale } from "@/i18n";
 
 export const ToolsList = () => {
+  const locale = useLocale() as Locale;
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
 
   const onTagClick = (tag: string) => () => {
@@ -17,9 +20,10 @@ export const ToolsList = () => {
     }
   };
 
-  const tags = getTags();
+  const tools = getTools(locale);
+  const tags = getTags(locale);
 
-  const filteredTools = TOOLS.filter((tool) => {
+  const filteredTools = tools.filter((tool) => {
     return selectedTags.length === 0
       ? true
       : tool.tags.some((tag) => selectedTags.includes(tag));

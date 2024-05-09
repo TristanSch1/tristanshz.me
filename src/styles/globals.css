@@ -10,6 +10,9 @@
   --primary-light: 126 17% 37%;
   --primary-light-foreground: 120 14% 96%;
   --primary-lighter: 89 33% 81%;
+
+  --muted: 133 10% 65%;
+  --muted-foreground: 136 11% 26%;
 }
 
 @media (prefers-color-scheme: dark) {
