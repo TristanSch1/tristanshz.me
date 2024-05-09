@@ -16,6 +16,12 @@
   }
 }
 
+@layer base {
+  body {
+    @apply font-mono;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

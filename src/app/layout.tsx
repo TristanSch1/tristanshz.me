@@ -1,8 +1,29 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { IBM_Plex_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const IBMPlexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-ibm-plex-mono",
+});
+
+const drukWide = localFont({
+  src: [
+    {
+      path: "../fonts/DrukWide-Medium-Trial.otf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../fonts/DrukWide-Bold-Trial.otf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-druk-wide",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +37,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${IBMPlexMono.variable} ${drukWide.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }
