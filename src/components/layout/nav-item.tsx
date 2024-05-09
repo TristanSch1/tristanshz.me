@@ -16,9 +16,12 @@ export const NavItem = ({
   const pathname = usePathnameWithoutLocale();
   const isActive = pathname === href;
 
-  const style = cn("block text-muted-foreground hover:text-foreground", {
-    "underline text-foreground": isActive,
-  });
+  const style = cn(
+    "block text-sm sm:text-base text-muted-foreground hover:text-foreground",
+    {
+      "underline text-foreground": isActive,
+    },
+  );
 
   if (href.startsWith("/")) {
     return (

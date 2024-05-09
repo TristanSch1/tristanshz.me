@@ -22,7 +22,7 @@ const GITHUB_PROFILE = "https://github.com/TristanSch1";
 export const Header = async () => {
   const t = await getTranslations("Header");
   return (
-    <header className={"h-20 w-screen fixed top-0 flex items-center px-8"}>
+    <header className={"h-20 w-full flex items-center px-8 bg-background"}>
       <NavItem href={"/"}>
         <div className={"h-6 w-6 rounded bg-primary-light"} />
       </NavItem>

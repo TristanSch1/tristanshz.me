@@ -6,7 +6,7 @@ export const RegularLayout = ({ children }: PropsWithChildren) => {
   return (
     <>
       <Header />
-      <main className={"py-20 container mx-auto max-w-[768px]"}>
+      <main className={"pb-20 pt-6 sm:pt-12 container mx-auto max-w-[768px]"}>
         <ScrollArea>{children}</ScrollArea>
       </main>
     </>
