@@ -1,4 +1,11 @@
 {
+  "Header": {
+    "nav": {
+      "tools": "Outils",
+      "blogs": "Blogs",
+      "livres": "Livres"
+    }
+  },
   "Homepage": {
     "headline": "Hey, I'm Tristan ! 👋"
   },

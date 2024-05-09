@@ -1,8 +1,8 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import { usePathnameWithoutLocale } from "@/utils/pathname";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { PropsWithChildren } from "react";
 
 type NavItemProps = {
@@ -13,7 +13,7 @@ export const NavItem = ({
   href,
   children,
 }: PropsWithChildren<NavItemProps>) => {
-  const pathname = usePathname();
+  const pathname = usePathnameWithoutLocale();
   const isActive = pathname === href;
 
   const style = cn("block text-muted-foreground hover:text-foreground", {
