@@ -1,4 +1,22 @@
 {
+  "Metadata": {
+    "default": {
+      "title": "Tristan Shz",
+      "description": ""
+    },
+    "tools": {
+      "title": "The tools I use every day",
+      "description": ""
+    },
+    "books": {
+      "title": "",
+      "description": ""
+    },
+    "blogs": {
+      "title": "",
+      "description": ""
+    }
+  },
   "Header": {
     "nav": {
       "tools": "Tools",
