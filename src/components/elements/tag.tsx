@@ -10,7 +10,7 @@ const tagVariants = cva("border w-fit", {
       lg: "p-3 text-base",
     },
     variant: {
-      contained: "bg-primary-light text-primary",
+      contained: "bg-primary-light text-primary-light-foreground",
       outlined: "border-primary-light text-primary-light",
     },
   },

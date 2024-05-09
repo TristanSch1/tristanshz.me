@@ -17,7 +17,9 @@ const config: Config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: "hsl(var(--primary))",
+        "primary-foreground": "hsl(var(--primary-foreground))",
         "primary-light": "hsl(var(--primary-light))",
+        "primary-light-foreground": "hsl(var(--primary-light-foreground))",
         "primary-lighter": "hsl(var(--primary-lighter))",
       },
       fontFamily: {

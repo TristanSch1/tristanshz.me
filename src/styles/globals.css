@@ -6,7 +6,9 @@
   --background: 36 43% 93%;
   --foreground: 0 0% 0%;
   --primary: 144 50% 20%;
+  --primary-foreground: 136 65% 97%;
   --primary-light: 126 17% 37%;
+  --primary-light-foreground: 120 14% 96%;
   --primary-lighter: 89 33% 81%;
 }
 
