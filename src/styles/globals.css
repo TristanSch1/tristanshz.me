@@ -40,16 +40,20 @@
     @apply font-title;
   }
 
+  p {
+    @apply body;
+  }
+
   .title-1 {
-    @apply text-4xl;
+    @apply text-xl sm:text-3xl lg:text-4xl;
   }
 
   .title-2 {
-    @apply text-3xl;
+    @apply text-lg sm:text-2xl lg:text-3xl;
   }
 
   .title-3 {
-    @apply text-2xl;
+    @apply text-base sm:text-xl lg:text-2xl;
   }
 
   .headline {
@@ -57,7 +61,7 @@
   }
 
   .body {
-    @apply font-normal text-base leading-relaxed;
+    @apply font-normal text-sm sm:text-base leading-relaxed;
   }
 }
 
