@@ -4,6 +4,7 @@ import { getTags, TOOLS } from "@/data/tools";
 import { Tag } from "../elements/tag";
 import { ToolCard } from "./tool-card";
 import { useState } from "react";
+import { AnimatePresence } from "framer-motion";
 
 export const ToolsList = () => {
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
@@ -42,9 +43,11 @@ export const ToolsList = () => {
         })}
       </div>
       <div className={"grid grid-cols-1 md:grid-cols-2 gap-3"}>
-        {filteredTools.map((tool) => {
-          return <ToolCard {...tool} key={tool.name} />;
-        })}
+        <AnimatePresence mode={"popLayout"}>
+          {filteredTools.map((tool) => {
+            return <ToolCard {...tool} key={tool.name} />;
+          })}
+        </AnimatePresence>
       </div>
     </div>
   );
