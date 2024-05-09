@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Mono } from "next/font/google";
 import localFont from "next/font/local";
-import "./globals.css";
+import "../styles/globals.css";
+import { RegularLayout } from "@/components/layout/regular-layout";
 
 const IBMPlexMono = IBM_Plex_Mono({
   subsets: ["latin"],
-  weight: ["400"],
+  weight: ["400", "500", "600", "700"],
   variable: "--font-ibm-plex-mono",
 });
 
@@ -37,8 +38,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${IBMPlexMono.variable} ${drukWide.variable}`}>
-        {children}
+      <body
+        className={`${IBMPlexMono.variable} ${drukWide.variable} bg-background`}
+      >
+        <RegularLayout>{children}</RegularLayout>
       </body>
     </html>
   );
