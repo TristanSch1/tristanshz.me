@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import { VariantProps, cva } from "class-variance-authority";
 import React from "react";
 
-const tagVariants = cva("border w-fit", {
+const tagVariants = cva("border w-fit select-none", {
   variants: {
     size: {
       sm: "p-1 text-xs",

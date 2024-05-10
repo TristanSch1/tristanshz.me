@@ -11,12 +11,11 @@ export const ToolCard = forwardRef<HTMLDivElement, LocalizedTool>(
       <motion.div
         ref={ref}
         layout
-        initial={{ y: 20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        exit={{ y: 20, opacity: 0 }}
-        className={
-          "border-2 h-full relative group overflow-hidden flex flex-col md:flex-row"
-        }
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        exit={{ scale: 0.8, opacity: 0 }}
+        transition={{ type: "tween" }}
+        className={"border-2 h-full flex flex-col md:flex-row bg-white/80"}
       >
         <div
           className={

@@ -24,6 +24,8 @@ const config: Config = {
 
         muted: "hsl(var(--muted))",
         "muted-foreground": "hsl(var(--muted-foreground))",
+
+        card: "hsl(var(--card))",
       },
       fontFamily: {
         mono: ["var(--font-ibm-plex-mono)"],

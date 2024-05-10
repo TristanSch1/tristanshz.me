@@ -1,0 +1,155 @@
+{
+  "main": {
+    "id": "b50e5f57ff5147da",
+    "type": "split",
+    "children": [
+      {
+        "id": "2d8ba58eee3696a4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6816ec057276da30",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fr/book-reviews/ikigai.mdx",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9d6b232ffa3e7de0",
+    "type": "split",
+    "children": [
+      {
+        "id": "c606752c3f83342d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fb4d6308c79fbcbb",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "41ae5e94ebc111d5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d3e95d0d715cbb38",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b07fd91366d9854b",
+    "type": "split",
+    "children": [
+      {
+        "id": "56a58d360c60f4ee",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5544d1872ad22fc3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "fr/book-reviews/ikigai.mdx",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "21ad137df48d0fa3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "fr/book-reviews/ikigai.mdx",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "30517ef92d315393",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "28b8066c33581985",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "fr/book-reviews/ikigai.mdx"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "6816ec057276da30",
+  "lastOpenFiles": [
+    "fr/book-reviews/deep-work.mdx",
+    "fr/book-reviews/ikigai.mdx",
+    "en/blog-posts"
+  ]
+}
