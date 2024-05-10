@@ -11,7 +11,7 @@ type Props = {
 export const BookReviewCard = ({ metadata: m, slug }: Props) => {
   return (
     <Link
-      href={slug}
+      href={`/books/${slug}`}
       className={
         "flex flex-col sm:flex-row items-center sm:items-start relative bg-card border-2 px-2 sm:px-4 py-3 sm:py-6 gap-2 sm:gap-4"
       }
