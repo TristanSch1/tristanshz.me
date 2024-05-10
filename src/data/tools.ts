@@ -16,7 +16,7 @@ export const TOOLS: Tool[] = [
         tags: ["productivity"],
       },
     },
-    url: "",
+    url: "https://readwise.io/",
     icon: "/images/tools/readwise.png",
   },
   {
@@ -33,7 +33,7 @@ export const TOOLS: Tool[] = [
         tags: ["productivity", "writing"],
       },
     },
-    url: "",
+    url: "https://obsidian.md/",
     icon: "/images/tools/obsidian.png",
   },
   {

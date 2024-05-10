@@ -5,17 +5,20 @@ import { motion } from "framer-motion";
 import { forwardRef } from "react";
 import { LocalizedTool } from "@/data/tools";
 
-export const ToolCard = forwardRef<HTMLDivElement, LocalizedTool>(
+export const ToolCard = forwardRef<HTMLAnchorElement, LocalizedTool>(
   (props, ref) => {
     return (
-      <motion.div
+      <motion.a
         ref={ref}
         layout
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         exit={{ scale: 0.8, opacity: 0 }}
         transition={{ type: "tween" }}
-        className={"border-2 h-full flex flex-col md:flex-row bg-white/80"}
+        className={"border-2 h-full flex flex-col md:flex-row bg-card group"}
+        href={props.url}
+        rel={"noopener noreferrer"}
+        target={"_blank"}
       >
         <div
           className={
@@ -27,7 +30,9 @@ export const ToolCard = forwardRef<HTMLDivElement, LocalizedTool>(
             alt={props.name}
             width={64}
             height={64}
-            className={"w-10 h-10 md:w-16 md:h-16"}
+            className={
+              "w-10 h-10 md:w-16 md:h-16 group-hover:scale-110 group-hover:rotate-6 transition-all duration-200 ease-out"
+            }
           />
         </div>
         <div className={"flex-1 h-full flex flex-col gap-2 px-4 py-4"}>
@@ -43,7 +48,7 @@ export const ToolCard = forwardRef<HTMLDivElement, LocalizedTool>(
             })}
           </div>
         </div>
-      </motion.div>
+      </motion.a>
     );
   },
 );
