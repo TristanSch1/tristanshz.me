@@ -6,7 +6,6 @@ import { RegularLayout } from "@/components/layout/regular-layout";
 import { LOCALES, ParamsWithLocale } from "@/i18n";
 import { unstable_setRequestLocale } from "next-intl/server";
 import { metadataFromTranslations } from "@/utils/metadata";
-import { PageAnimatePresence } from "@/components/page-animate-presence";
 
 const IBMPlexMono = IBM_Plex_Mono({
   subsets: ["latin"],
