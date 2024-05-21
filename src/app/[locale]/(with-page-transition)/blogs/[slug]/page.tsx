@@ -1,7 +1,6 @@
 import { CustomMDX } from "@/components/mdx";
 import { getBookReviews } from "@/db/book-reviews";
 import { ParamsWithLocale } from "@/i18n";
-import { ChevronLeft } from "lucide-react";
 import { unstable_setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 

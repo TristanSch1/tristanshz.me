@@ -11,10 +11,6 @@ const NAVIGATION = [
     labelKey: "blogs",
     href: "/blogs",
   },
-  {
-    labelKey: "books",
-    href: "/books",
-  },
 ];
 
 const GITHUB_PROFILE = "https://github.com/TristanSch1";
